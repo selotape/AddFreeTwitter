@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Ad-Free Twitter",
+  "version": "1.0.0",
+  "description": "Hides promoted / ad tweets on Twitter and X.",
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/*", "https://x.com/*"],
+      "run_at": "document_start",
+      "js": ["content.js"]
+    }
+  ]
+}
